@@ -1,30 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" id="logo">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NewsLetter</title>
     <link rel="stylesheet" href="css/projectsheet.css">
-    <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
   </head>
+
   <body>
-    <header>
-      <div class="container">
-        <div class="header-left">
-          <h1 class="logo">NewsLetter</h1>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="#logo" class="navbar-brand page-scroll">News Letter</a>
         </div>
-        <div class="header-right">
-          <a href="#">Topics</a>
-          <a href="#">Local</a>
-          <a href="#">International</a>
-          <a href="#" class="login">Log in</a>
-          <a href="#" class="sign">Sign up</a>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Topics <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Local</a></li>
+                <li><a href="#">International</a></li>
+              </ul>
+            </li>
+            <form class="navbar-form navbar-left">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search">
+              </div>>
+            </form>
+            <li class="active"><a href="#">Log in <span class="sr-only">(current)</span></a></li>
+            <li class="active"><a href="#">Sign in <span class="sr-only">(current)</span></a></li>
+          </ul>
         </div>
+
       </div>
-    </header>
-     <div class="top-wrapper">
+    </nav>
+
+    <!-- akhir navbar -->
+
+     <div class="top-wrapper" style="background-image: url('images/bg.png')">
       <div class="container">
         <h1>#OF_THE_WEEK</h1>
         <h1>MOST POPULAR NEWS</h1>
@@ -40,41 +64,44 @@
         </div>
       </div>
     </div>
+
     <div class="lesson-wrapper">
       <div class="container">
-        <div class="heading">
-          <h2>What interests you?</h2>
-        </div>
-      <div class="lessons">
-          <div class="lesson">
-            <div class="lesson-icon">
-              <h2>Social </h2>
-              <img src="images/undraw_Work_chat_re_qes4.svg">
-            </div>
-            <p class="txt-content">News about hot issues around you, and don't miss the 'lifehack' that can make your day brighter.</p>
+        <div class="row">
+          <div class="heading col-sm-12">
+            <h2>What interests you?</h2>
           </div>
-          <div class="lesson">
-            <div class="lesson-icon">
-              <h2>Economy</h2>
-              <img src="images/undraw_Bitcoin_P2P_re_1xqa.svg">
+          <div class="lessons">
+              <div class="lesson col-sm-3">
+                <div class="lesson-icon">
+                  <h3>Social </h3>
+                  <img src="images/undraw_Work_chat_re_qes4.svg">
+                </div>
+                <p class="txt-content">News about hot issues around you, and don't miss the 'lifehack' that can make your day brighter.</p>
+              </div>
+              <div class="lesson col-sm-3">
+                <div class="lesson-icon">
+                  <h3>Economy</h3>
+                  <img src="images/undraw_Bitcoin_P2P_re_1xqa.svg">
+                </div>
+                <p class="txt-content">Latest news about disruptive economy, digital economy, new economy, stock exchange, market, financial, macro, entrepreneur, industry, and BUMN.</p>
+              </div>
+                <div class="lesson col-sm-3">
+                  <div class="lesson-icon">
+                    <h3>Health</h3>
+                    <img src="images/undraw_bike_ride_7xit.svg">
+                </div>
+                <p class="txt-content">Today's Latest Health-related News, Tips, Articles, Info. Diet, parenting, sex, drugs, and disease. There is also a doctor's consultation and a health calculator.</p>
+              </div>
+              <div class="lesson col-sm-3">
+                <div class="lesson-icon">
+                  <h3>Politic</h3>
+                  <img src="images/undraw_Followers_re_6k3g.svg">
+                </div>
+                <p class="txt-content">The latest news about the world of politics at home and abroad is equipped with data in the form of photos, quotes, recorded events, and statistics.</p>
+              </div>
+              <div class="clear"></div>
             </div>
-            <p class="txt-content">Latest news about disruptive economy, digital economy, new economy, stock exchange, market, financial, macro, entrepreneur, industry, and BUMN.</p>
-          </div>
-          <div class="lesson">
-            <div class="lesson-icon">
-                <h2>Health</h2>
-                <img src="images/undraw_bike_ride_7xit.svg">
-            </div>
-            <p class="txt-content">Today's Latest Health-related News, Tips, Articles, Info. Diet, parenting, sex, drugs, and disease. There is also a doctor's consultation and a health calculator.</p>
-          </div>
-          <div class="lesson">
-            <div class="lesson-icon">
-              <h2>Politic</h2>
-              <img src="images/undraw_Followers_re_6k3g.svg">
-            </div>
-            <p class="txt-content">The latest news about the world of politics at home and abroad is equipped with data in the form of photos, quotes, recorded events, and statistics.</p>
-          </div>
-          <div class="clear"></div>
         </div>
       </div>
     </div>
@@ -93,7 +120,7 @@
 
             <div class="col-xs-12 col-sm-6 col-md-3">
               <div class="widget subscribe no-box">
-                <h2 class="widget-title">NewsLetter</h2>
+                <h2 class="widget-title"> <a href="#logo"> News Letter</a></h2>
               </div>
             </div>
 
