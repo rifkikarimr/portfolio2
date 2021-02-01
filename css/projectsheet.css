@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+html {
+  position: relative;
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: "Lucida Grande";
@@ -26,55 +31,17 @@ a {
   margin: 0 auto;
 }
 
-
-header {
-  height: 65px;
-  width: 100%;
-  background-color: rgba(34, 49, 52, 0.9);
-  position :fixed;
-  top: 0;
-  z-index: 10;
-}
-
-.header-left {
-  color: white;
-  float: left;
-  width: 124px;
-}
-
 .logo:hover {
   box-shadow: none;
   cursor: default;
 }
 
-.header-right {
-  float: right;
-}
-
-.header-right a {
-  line-height: 65px;
-  padding: 0 25px;
-  color: white;
-  display: block;
-  float: left;
-  transition: all 0.5s;
-}
-
-.header-right a:hover {
-  background-color: rgba(255, 255, 255, 0.3);
-}
-
-.menu-icon {
-  display: none;
-  color: white;
-  float: right;
-  font-size: 25px;
-  padding: 21px 0;
+.header a {
+    color: #FF00FF;
 }
 
 .top-wrapper {
   padding: 180px 0 100px 0;
-  background-image: url(photo6055162799799249793.jpg);
   background-size:cover;
   text-align: center;
   color:white;
@@ -105,11 +72,13 @@ header {
 }
 
 .lesson-wrapper {
-  padding-bottom: 80px;
+  padding-bottom: 50px;
+  padding-top: 50px;
   padding-left: 5%;
   padding-right: 5%;
   background-color: #f7f7f7;
   text-align: center;
+  min-height: 600px;
 }
 
 .heading {
@@ -120,11 +89,6 @@ header {
 
 .heading h2 {
   font-weight: normal;
-}
-
-.lesson {
-  float:left;
-  width: 25%;
 }
 
 .lesson-icon img {
@@ -144,8 +108,9 @@ header {
 
 .message-wrapper {
   border-bottom: 1px solid #eee;
-  padding-bottom: 80px;
+  padding-top: 80px;
   text-align: center;
+  min-height: 600px;
 }
 
 .message {
@@ -267,14 +232,18 @@ footer.light .footer-copyright {
 .widget.subscribe p {
   margin-bottom: 18px;
 }
+.widget a {
+  color: white;
+}
 .widget li a {
-  color: #ff8d1e;
+  color: white;
 }
 .widget li a:hover {
   color: #4b92dc;
 }
 .widget-title {
   margin-bottom: 20px;
+  color: #FF00FF;
 }
 .widget-title span {
   background: #839FAD none repeat scroll 0 0;
