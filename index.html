@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>NewsLetter</title>
     <link rel="stylesheet" href="css/projectsheet.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
   </head>
@@ -74,28 +75,28 @@
           </div>
           <div class="lessons">
               <div class="lesson col-sm-3">
-                <div class="lesson-icon">
+                <div class="lesson-icon" id="social">
                   <h3>Social </h3>
                   <img src="images/undraw_Work_chat_re_qes4.svg">
                 </div>
                 <p class="txt-content">News about hot issues around you, and don't miss the 'lifehack' that can make your day brighter.</p>
               </div>
               <div class="lesson col-sm-3">
-                <div class="lesson-icon">
+                <div class="lesson-icon" id="economy">
                   <h3>Economy</h3>
                   <img src="images/undraw_Bitcoin_P2P_re_1xqa.svg">
                 </div>
                 <p class="txt-content">Latest news about disruptive economy, digital economy, new economy, stock exchange, market, financial, macro, entrepreneur, industry, and BUMN.</p>
               </div>
                 <div class="lesson col-sm-3">
-                  <div class="lesson-icon">
+                  <div class="lesson-icon" id="health">
                     <h3>Health</h3>
                     <img src="images/undraw_bike_ride_7xit.svg">
                 </div>
                 <p class="txt-content">Today's Latest Health-related News, Tips, Articles, Info. Diet, parenting, sex, drugs, and disease. There is also a doctor's consultation and a health calculator.</p>
               </div>
               <div class="lesson col-sm-3">
-                <div class="lesson-icon">
+                <div class="lesson-icon" id="politic">
                   <h3>Politic</h3>
                   <img src="images/undraw_Followers_re_6k3g.svg">
                 </div>
@@ -106,7 +107,7 @@
         </div>
       </div>
     </div>
-    <div class="message-wrapper">
+    <div class="message-wrapper" id="about">
       <div class="container">
         <div class="heading">
           <h2>About Us</h2>
@@ -114,6 +115,7 @@
         </div>
       </div>
     </div>
+
     <footer id="footer" class="footer-1">
       <div class="main-footer widgets-dark typo-light">
         <div class="container">
@@ -121,7 +123,7 @@
 
             <div class="col-xs-12 col-sm-6 col-md-3">
               <div class="widget subscribe no-box">
-                <h2 class="widget-title"> <a href="#logo"> News Letter</a></h2>
+                <h2 class="widget-title"><a href="#logo" class="page-scroll"> News Letter</a></h2>
               </div>
             </div>
 
@@ -136,19 +138,19 @@
                     <div class="thumb-content"><a href="#.">International</a></div>
                   </li>
                   <li>
-                    <div class="thumb-content"><a href="#.">Lifestyle</a></div>
+                    <div class="thumb-content"><a href="#social" class="page-scroll">Social</a></div>
                   </li>
                   <li>
-                    <div class="thumb-content"><a href="#.">Economy</a></div>
+                    <div class="thumb-content"><a href="#economy" class="page-scroll">Economy</a></div>
                   </li>
                   <li>
-                    <div class="thumb-content"><a href="#.">Health</a></div>
+                    <div class="thumb-content"><a href="#health" class="page-scroll">Health</a></div>
                   </li>
                   <li>
-                    <div class="thumb-content"><a href="#.">Politics</a></div>
+                    <div class="thumb-content"><a href="#politic" class="page-scroll">Politics</a></div>
                   </li>
                   <li>
-                    <div class="thumb-content"><a href="#.">About us</a></div>
+                    <div class="thumb-content"><a href="#about" class="page-scroll">About us</a></div>
                   </li>
                 </ul>
               </div>
@@ -188,9 +190,11 @@
         </div>
       </div>
     </footer>
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script src="js/jquery-3.1.1.min.js"></script>
+
     <script src="js/bootstrap.min.js"></script>
-    
+
+    <script src="js/script.js"></script>
   </body>
 </html>
