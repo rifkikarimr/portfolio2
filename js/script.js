@@ -1,5 +1,5 @@
 // effect ketika di klik
-$('.page-scroll').on('click', function(){
+$('.page-scroll').on('click', function(e){
 
   // ambil isi href
   var href = $(this).attr('href');
@@ -8,8 +8,8 @@ $('.page-scroll').on('click', function(){
 
   //pindahkan scroll
   $('html, body').animate({
-    scrollTop: elemenHref.offset().top - 100
-  }, 1000, 'swing')
+    scrollTop: elemenHref.offset().top - 50
+  }, 1000, 'swing');
 
   e.preventDefault();
 });
